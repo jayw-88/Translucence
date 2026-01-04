@@ -2,7 +2,7 @@
   /* APP ELEMENTS */
   --app-bg: url(https://i.ibb.co/FLyL2WDt/q7x3qq-Hqps-Bu9-Jta-Ti-Sqrh.jpg);
   --app-blur: 0px;
-  --app-margin: 12px;
+  --app-margin: 24px;
   --app-radius: 8px;
   --main-rgb: 0,0,0;
   --main-content-opacity: 0.2;
@@ -10,7 +10,7 @@
   --main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
   --sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
   /* ACCENT HSL AND TEXT COLOR SETTINGS */
-  --accent-hue: 156;
+  --accent-hue: 210;
   --accent-saturation: 77.5%;
   --accent-lightness: 47.1%;
   --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
