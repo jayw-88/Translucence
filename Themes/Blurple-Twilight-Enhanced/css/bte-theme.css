@@ -1,8 +1,36 @@
+/*
+Blurple Twilight Enhanced Theme + Emoji Replace (Apple) for Vencord. 
+
+Based on the Blurple Twilight Nitro Theme, this enhanced theme has many other features the regular theme cannot offer.
+*/
+
+
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/ThemeDevBadge.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/spritesheets.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/people.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/nature.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/food.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/activity.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/travel.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/objects.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/symbols.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/flags.css);
+
 :root {
+  
+  ._04eede68d145ae81-sprite {
+    background-color: transparent !important;
+    background-position: var(--custom-emoji-sprite-bg-position) !important;
+    background-size: var(--custom-emoji-sprite-bg-size) !important;
+  }
+  ._04eede68d145ae81-spriteGreyscale {
+    filter: grayscale(1) !important;
+  }
+  
   /* APP ELEMENTS */
   --app-bg: url(https://i.ibb.co/PG8vChZW/istockphoto-1498657258-612x612.jpg);
   --app-blur: 0px;
-  --app-margin: 24px;
+  --app-margin: 10px;
   --app-radius: 8px;
   --main-rgb: 0,0,0;
   --main-content-opacity: 0.2;
@@ -13,9 +41,9 @@
   --accent-hue: 230;
   --accent-saturation: 80%;
   --accent-lightness: 50%;
-  --accent-opacity: 1;
+  --accent-opacity: 0;
   --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
-  --accent-text-color: hsl(0,0%,0%);
+  --accent-text-color: hsl(0, 0%, 100%);
   --accent-secondary-color: hsl(from hsl(var(--accent-hsl)) h calc(s * 0.6) calc(l * 0.2) / calc(var(--accent-opacity) * 0.5));
   --accent-secondary-text-color: hsl(0,0%,94%);
   /* ALERT HSL AND TEXT COLOR SETTINGS */
@@ -27,9 +55,9 @@
   --alert-action-color: hsl(0,0%,100%);
   --alert-text-color: hsl(0,0%,100%);
   /* MENTION HSL COLOR SETTINGS */
-  --mention-hue: var(--accent-hue);
-  --mention-saturation: var(--accent-saturation);
-  --mention-lightness: var(--accent-lightness);
+  --mention-hue: 210;
+  --mention-saturation: 80%;
+  --mention-lightness: 50%;
   --mention-hsl: var(--mention-hue),calc(var(--mention-saturation) * var(--saturation-factor)),var(--mention-lightness);
   --mention-opacity: 1;
   /* REPLY HSL COLOR SETTINGS */
@@ -39,7 +67,7 @@
   --reply-hsl: var(--reply-hue),calc(var(--reply-saturation) * var(--saturation-factor)),var(--reply-lightness);
   --reply-opacity: 1;
   /* MESSAGE COLOR SETTINGS */
-  --message-color: hsl(0,0%,0%,0.4);
+  --message-color: hsl(0,0%,0%,0.2);
   --message-color-hover: hsl(0,0%,0%,0.55);
   --message-radius: var(--app-radius);
   --message-padding-top: 8px;
@@ -64,13 +92,6 @@
   --card-color-select: hsl(0,0%,100%,0.19);
   --card-radius: var(--app-radius);
   --card-header-shadow: 0px 3px 9px 0px hsl(0,0%,0%,0.25);
-  /* BUTTON SETTINGS */
-  --button-height: 32px;
-  --button-padding: 0 16px;
-  --button-color: hsla(var(--accent-hsl),var(--accent-opacity));
-  --button-action-color: hsl(0,0%,0%);
-  --button-text-color: var(--accent-text-color);
-  --button-radius: 16px;
   /* SWITCH SETTINGS */
   --switch-slider-color: hsla(218,4.6%,46.9%,0.85);
   --switch-knob-color: hsl(0,0%,13%);
