@@ -10,14 +10,14 @@
   --main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
   --sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
   /* ACCENT HSL AND TEXT COLOR SETTINGS */
-  /**--accent-hue: 210;
+  --accent-hue: 210;
   --accent-saturation: 75%;
   --accent-lightness: 50%;
   --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
   --accent-opacity: 1;
   --accent-text-color: hsl(0,0%,0%);
   --accent-secondary-color: hsl(from hsl(var(--accent-hsl)) h calc(s * 0.6) calc(l * 0.2) / calc(var(--accent-opacity) * 0.5));
-  --accent-secondary-text-color: hsl(0,0%,94%);**/
+  --accent-secondary-text-color: hsl(0,0%,94%);
   /* ALERT HSL AND TEXT COLOR SETTINGS */
   --alert-hue: 359;
   --alert-saturation: 66.7%;
